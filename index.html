@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vkm.com.kh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alkatra&family=Angkor&family=Anton&family=Battambang:wght@400;900&family=Climate+Crisis&family=Edu+NSW+ACT+Foundation&family=Gloock&family=Koulen&family=Libre+Baskerville&family=Lobster&family=Lora&family=Oswald:wght@500&family=Playfair+Display:wght@500&family=Righteous&family=Roboto+Slab:wght@600&family=Roboto:wght@100&family=Suwannaphum:wght@100&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/logo-web/vkm.png">
+    <script src="style/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div class="contianer-fluid header-web">
+        <div class="container header">
+            <div class="row">
+                <div class="col-xl-3 col-4 logo-web">
+                    <img src="img/logo-web/vkm.png" alt="">
+                </div> 
+                <div class="col-xl-9 col-8 menu">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li>
+                            <a href="">Shop</a>
+                        </li>
+                        <li>
+                            <a href="">PreOrder</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                        <li class="search bar btn-menu">
+                            <a href="#"><i class="fa-solid fa-bars"></i></a>
+                        </li>
+                        <li class="search">
+                            <a href=""><i class="fa-solid fa-plus bok"></i></a>
+                        </li>
+                        <li class="search">
+                            <a href=""><i class="fa-solid fa-cart-shopping cart"></i></a>
+                        </li>
+                        <li class="search">
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                    </ul>
+                </div>            
+            </div>
+        </div>
+    </div>
+   <div class="left-menu">
+    <ul>
+        <li>
+            <a href=""><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+            <a href="">Shop <i class="fa-solid fa-shop"></i></a>
+        </li>
+        <li>
+            <a href="">PreOrder <i class="fa-solid fa-box"></i></a>
+        </li>
+        <li>
+            <a href="">Contact <i class="fa-solid fa-address-book"></i></a>
+        </li>
+    </ul>
+   </div>
+</body>
+
+<script>
+    $(document).ready(function(){
+        //add left-menu
+        $('.btn-menu').click(function(){
+            var pop = '<div class="popup"></div>';
+            $('body').append(pop);
+            $('.left-menu').css({'left':"0px"})
+        })
+        //close left menu
+        $('body').on('click','.popup',function(){
+           $(this).remove();
+           $('.left-menu').css({'left':"-242px"})
+        });
+    });
+
+
+</script>
+</html>
